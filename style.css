@@ -206,6 +206,7 @@ body {
   overflow: hidden;
   width: 100%;
   margin-top: 30px;
+  margin-left: -10px;
 }
 
 .slider1 {
@@ -260,6 +261,7 @@ body {
   overflow: hidden;
   width: 100%;
   margin-top: 30px;
+  margin-left: -10px;
 }
 
 .slider2 {
@@ -294,6 +296,9 @@ body {
 
 .card2:last-child {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid #2C3C98;
 }
 
@@ -304,6 +309,7 @@ body {
 
 .card2-body-title {
   align-self: start;
+  font-size: 20px;
 }
 
 .card2-body-subtitle {
@@ -472,9 +478,12 @@ body {
   /*padding: 10px;*/
 }
 
+.prev_2 {
+  margin-left: 10px;
+}
 
-.questions {
-  margin-top: 80px;
+.next_2 {
+  margin-right: 10px;
 }
 
 .questions-button {
@@ -490,7 +499,7 @@ body {
 
 
 .faq-container {
-  margin: 30px 20px 0 20px;
+  margin: 30px 0 0 0;
 }
 
 .faq-item {
@@ -633,7 +642,6 @@ body {
   }
 
   .main-subtitle {
-
     width: 40%;
   }
 
@@ -650,6 +658,23 @@ body {
   .about_table {
     width: 70%;
     grid-template-columns: 33% 33% 33%;
+  }
+
+  .about_table-item {
+    align-items: start;
+  }
+
+  .about_table-item_subtitle {
+    align-self: start;
+    text-align: start;
+  }
+
+  .about_text {
+    text-align: start;
+  }
+
+  .about_text2 {
+    text-align: start;
   }
 
   .about_table-item3 {
@@ -684,6 +709,7 @@ body {
   }
 
   .questions {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
   }
@@ -707,6 +733,19 @@ body {
   .application-button {
     width: 60%;
   }
+  .advantages-title {
+    text-align: start;
+  }
+  .vacancies-title {
+    align-self: start;
+  }
+  .vacancies-subtitle {
+    align-self: start;
+  }
+
+  .img-width {
+    width: 30%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -714,6 +753,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
+    margin-left: -5px;
   }
 
   .logo {
@@ -725,7 +765,7 @@ body {
   }
 
   .main {
-    padding-bottom: 300px;
+    padding-bottom: 250px;
   }
   .main-title {
     font-size: 30px;
@@ -759,7 +799,7 @@ body {
 
   .advantages-big {
     width: 98%;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     display: flex;
     flex-direction: column;
   }
@@ -823,6 +863,8 @@ body {
 
   .about_block2 {
     display: grid;
+    align-items: start;
+    justify-content: start;
   }
 
   .about_table-item_title {
@@ -838,6 +880,10 @@ body {
     position: absolute;
     left: 0;
     top: 30px;
+  }
+
+  .questions {
+    margin-top: 20px;
   }
 
   .questions-button {
@@ -873,6 +919,27 @@ body {
     display: flex;
     flex-direction: row;
     gap: 20px;
+  }
+
+  .headers-big-item:hover {
+    color: #2C3C98;
+  }
+
+  .faq-answer.open {
+    margin-bottom: 20px;
+  }
+  p {
+    margin: 0;
+  }
+
+  .card-body-img {
+    width: 25%;
+  }
+  .img-width {
+    width: 35%;
+  }
+  .vacancies {
+    margin-top: 0;
   }
 }
 
